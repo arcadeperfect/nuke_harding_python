@@ -1,0 +1,3 @@
+[submodule "pysequitur"]
+	path = pysequitur
+	url = git@github.com:arcadeperfect/pysequitur.git
