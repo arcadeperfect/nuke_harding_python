@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "nuke-harding-python"
+version = "0.1.0"
+description = "Alex Harding's Python junk for Nuke"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "nuke_harding_python", from = "src"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pysequitur = {path = "../pysequitur", develop = true}  # Dev mode only
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+mypy = "^1.0"
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
